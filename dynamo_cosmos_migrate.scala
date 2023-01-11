@@ -1,3 +1,15 @@
+// SPAWN A DATABRICKS CLUSTER
+// TESTED WITH 10.4 LTS (includes Apache Spark 3.2.1, Scala 2.12)
+
+// SET ENVIRONMENT VARIABLES IN YOUR CLUSTER
+// AWS_REGION=YOUR_AWS_REGION
+// AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
+// AWS_SECRET_KEY=YOUR_SECRET_KEY
+
+// INSTALL LIBRARIES (MAVEN COORDINATES) IN YOUR CLUSTER
+// com.audienceproject:spark-dynamodb_2.12:1.1.2
+// com.azure.cosmos.spark:azure-cosmos-spark_3-2_2-12:4.15.0
+
 // Databricks notebook source
 import com.audienceproject.spark.dynamodb.implicits._
 import org.apache.spark.sql.SparkSession
